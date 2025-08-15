@@ -1,11 +1,3 @@
-# DougDoug Note: 
-# This is the code that connects to Twitch / Youtube and checks for new messages.
-# You should not need to modify anything in this file, just use as is.
-
-# This code is based on Wituz's "Twitch Plays" tutorial, updated for Python 3.X
-# http://www.wituz.com/make-your-own-twitch-plays-stream.html
-# Updated for Youtube by DDarknut, with help by Ottomated
-
 import requests
 import sys
 import socket
@@ -20,6 +12,9 @@ import traceback
 MAX_TIME_TO_WAIT_FOR_LOGIN = 3
 YOUTUBE_FETCH_INTERVAL = 1
 
+#####################
+# TWITCH CONNECTION #
+#####################
 class Twitch:
     re_prog = None
     sock = None
@@ -154,6 +149,10 @@ class Twitch:
 
         return privmsgs
 
+
+######################
+# YOUTUBE CONNECTION #
+######################
 # Thanks to Ottomated for helping with the yt side of things!
 class YouTube:
     session = None
@@ -340,3 +339,14 @@ class YouTube:
                         msg['message'] += part['emoji']['emojiId']
                 messages.append(msg)
         return messages
+
+
+###################################################################################
+# DougDoug Note:                                                                  #
+# This is the code that connects to Twitch / Youtube and checks for new messages. #
+# You should not need to modify anything in this file, just use as is.            #
+#                                                                                 #
+# This code is based on Wituz's "Twitch Plays" tutorial, updated for Python 3.X   #
+# http://www.wituz.com/make-your-own-twitch-plays-stream.html                     #
+# Updated for Youtube by DDarknut, with help by Ottomated                         #
+###################################################################################

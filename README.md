@@ -1,14 +1,22 @@
 # TwitchPlays
-These are the three Python files I use that allows Twitch Chat or Youtube Chat to control your keyboard or mouse to play a game. You are welcome to use or adapt this code for your own content.
+Fork of [DougDougGithub](https://github.com/DougDougGithub/TwitchPlays)
 
-To run the code you will need to install Python 3.9.  
-Additionally, you will need to install the following python modules using Pip:  
-python -m pip install keyboard  
-python -m pip install pydirectinput  
-python -m pip install pyautogui  
-python -m pip install pynput  
-python -m pip install requests  
+Let your twitch chat play anything!
+Supported for Windows, Linux, and MacOS!
 
-Once Python is set up, simply change the Twitch username (or Youtube channel ID) in TwitchPlays_TEMPLATE.py, and you'll be ready to go.
+# Quick Start
 
-This code is originally based off Wituz's Twitch Plays template, then expanded by DougDoug and DDarknut with help from Ottomated for the Youtube side. For now I am not reviewing any pull requests or code changes, this code is meant to be a simple prototype that is uploaded for educational purposes. But feel free to fork the project and create your own version!
+Clone this repository and run the requirements.txt
+```
+git clone git@github.com:YouriHQ/TwitchPlays.git
+pip install -r requirements.txt
+```
+**To run this code you will need to install Python 3.9 or higher!!**
+
+Once this repository is set up, simply change the Twitch username (or Youtube channel ID) in TwitchPlays_TEMPLATE.py, and you'll be ready to go! Read the comments inside the `handle_message` to see how you can add more keys!
+
+# Licensing
+
+This repository is free and open-source software under the [MIT License](https://github.com/YouriHQ/TwitchPlays/blob/main/LICENSE)!
+
+###### This repository is a fork of DougDougGithub's repository. In his README is stated that "This code is originally based off Wituz's Twitch Plays template, then expanded by DougDoug and DDarknut with help from Ottomated for the Youtube side. For now I am not reviewing any pull requests or code changes, this code is meant to be a simple prototype that is uploaded for educational purposes. But feel free to fork the project and create your own version!"

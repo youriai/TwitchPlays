@@ -1,0 +1,4 @@
+keyboard==0.13.5
+pyautogui==0.9.54
+pynput==1.8.1
+Requests==2.32.4
