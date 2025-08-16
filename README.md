@@ -9,6 +9,7 @@ Supported for Windows, Linux, and MacOS!
 Clone this repository and run the requirements.txt
 ```
 git clone git@github.com:YouriHQ/TwitchPlays.git
+cd TwitchPlays
 pip install -r requirements.txt
 ```
 **To run this code you will need to install Python 3.9 or higher!!**
