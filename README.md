@@ -8,7 +8,7 @@ Supported for Windows, Linux, and MacOS!
 
 Clone this repository and run the requirements.txt
 ```
-git clone git@github.com:YouriHQ/TwitchPlays.git
+git clone git@github.com:YouriSchijff/TwitchPlays.git
 cd TwitchPlays
 pip install -r requirements.txt
 ```
