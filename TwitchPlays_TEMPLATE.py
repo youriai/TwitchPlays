@@ -44,6 +44,8 @@ pyautogui.FAILSAFE = False
 
 ##########################################################
 
+print("Press Shift+Backspace to end the program")
+
 # Count down before starting, so you have time to load up the game
 countdown = 5
 while countdown > 0:
@@ -77,20 +79,23 @@ def handle_message(message):
 
         # If the chat message is "left", then hold down the A key for 2 seconds
         if msg == "left":
-            hold_key_for_time(A, 2)
+            HoldAndReleaseKey(A, 2)
 
         # If the chat message is "right", then hold down the D key for 2 seconds
         if msg == "right":
-            hold_key_for_time(D, 2)
+            HoldAndReleaseKey(D, 2)
 
-        # If message is "up", then permanently hold down the W key
+        # If message is "up", then hold down the W key for 2 seconds
         if msg == "up":
-            hold_key_for_time(W, 2)
+            HoldAndReleaseKey(W, 2)
 
-        # If message is "reverse", then permanently hold down the S key
+        # If message is "down", then hold down the W key for 2 seconds
         if msg == "down":
-            hold_key_for_time(S, 2)
+            HoldAndReleaseKey(S, 2)
 
+         # If message is "select", then hold down the ENTER key for 0.5 seconds
+        if msg == "select":
+            HoldAndReleaseKey(ENTER, 0.5)
 
 
         # TODO: I still need to implement mouse movement!!! - Youri
