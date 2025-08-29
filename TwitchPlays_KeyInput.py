@@ -1,5 +1,7 @@
 import time
-from pynput.keyboard import Controller, Key
+from pyautogui import MIDDLE
+from pynput.keyboard import Key, Controller as KeyboardController
+from pynput.mouse import Button, Controller as MouseController
 
 Q = 'q'
 W = 'w'
@@ -81,7 +83,7 @@ F11 = Key.f11
 F12 = Key.f12
 
 
-KEYBOARD = Controller()
+KEYBOARD = KeyboardController()
 
 def HoldKey(key):
     KEYBOARD.press(key)
@@ -93,3 +95,29 @@ def HoldAndReleaseKey(key, seconds: float):
     HoldKey(key)
     time.sleep(seconds)
     ReleaseKey(key)
+
+MOUSE = MouseController()
+
+LEFT_BUTTON = Button.left
+RIGHT_BUTTON = Button.right
+MIDDLE_BUTTON = Button.middle
+
+def mouseDown(button):
+    MOUSE.press(button)
+
+def mouseUp(button):
+    MOUSE.release(button)
+
+def mouseClick(button, seconds: float):
+    mouseDown(button)
+    time.sleep(seconds)
+    mouseUp(button)
+
+def mouseMove(x: int, y: int, relative=False):
+    if relative:
+        MOUSE.move(x, y)
+    else:
+        MOUSE.position = (x, y)
+
+def mouseScroll(x: int, y: int):
+    MOUSE.scroll(x, y)

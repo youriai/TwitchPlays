@@ -71,7 +71,12 @@ def handle_message(message):
         # Use the "HoldKey(KEYCODE)" function to permanently press and hold down a key.
         # Use the "ReleaseKey(KEYCODE)" function to release a specific keyboard key.
         # Use the "HoldAndReleaseKey(KEYCODE, SECONDS)" function press down a key for X seconds, then release it.
-        # Mouse input not supported yet - Youri
+        # Use the "mouseDown(BUTTON)" function to hold a mouse button down.
+        # Use the "mouseUp(BUTTON)" function to release a mouse button.
+        # Use the "mouseClick(BUTTON, SECONDS)" function to click a mouse button for X seconds.
+        # Use the "mouseMove(X, Y, relative=False)" function to move the mouse cursor absolute to X,Y, OR relative if relative=True.
+        # Use the "mouseScroll(X, Y)" function to scroll the mouse wheel in X,Y direction.
+
 
         #############################
         # Topdown game code example #
@@ -97,8 +102,21 @@ def handle_message(message):
         if msg == "select":
             HoldAndReleaseKey(ENTER, 0.5)
 
+        # If message is "shoot", then hold down the LEFT_BUTTON button for 0.5 seconds
+        if msg == "shoot":
+            mouseClick(LEFT_BUTTON, 0.5)
 
-        # TODO: I still need to implement mouse movement!!! - Youri
+        # If message is "zoom", then hold down the RIGHT_BUTTON button for 0.5 seconds
+        if msg == "zoom":
+            mouseClick(RIGHT_BUTTON, 0.5)
+
+        # If message is "move", then move the mouse to the specified coordinates
+        if msg == "move":
+            mouseMove(100, 100, relative=True)
+
+        # If message is "scroll", then scroll the mouse wheel to the specified coordinates
+        if msg == "scroll":
+            mouseScroll(100, 100)
 
     except Exception as e:
         print("Encountered exception: " + str(e))
