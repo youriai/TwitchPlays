@@ -64,8 +64,8 @@ SPACE = Key.space
 DELETE = Key.delete
 COMMA = ','
 PERIOD = '.'
-BACKSLASH = '/'
-FORWARDSLASH = '\\'
+BACKSLASH = '\\'
+FORWARDSLASH = SLASH = '/'
 LEFT_BRACKET = '['
 RIGHT_BRACKET = ']'
 
