@@ -18,6 +18,6 @@ Once this repository is set up, simply change the Twitch username (or Youtube ch
 
 # Licensing
 
-This repository is free and open-source software under the [MIT License](https://github.com/YouriSchijff/TwitchPlays/blob/main/LICENSE)!
+This repository is free and open-source software under the [MIT License](https://github.com/youriai/TwitchPlays/blob/main/LICENSE)!
 
 ###### This repository is a fork of DougDougGithub's repository. In his README is stated that "This code is originally based off Wituz's Twitch Plays template, then expanded by DougDoug and DDarknut with help from Ottomated for the Youtube side. For now I am not reviewing any pull requests or code changes, this code is meant to be a simple prototype that is uploaded for educational purposes. But feel free to fork the project and create your own version!"
