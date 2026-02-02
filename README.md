@@ -16,6 +16,8 @@ pip install -r requirements.txt
 
 Once this repository is set up, simply change the Twitch username (or Youtube channel ID) in TwitchPlays_TEMPLATE.py, and you'll be ready to go! Read the comments inside the `handle_message` to see how you can add more keys!
 
+*On linux, this program should be run as root.*
+
 # Licensing
 
 This repository is free and open-source software under the [MIT License](https://github.com/youriai/TwitchPlays/blob/main/LICENSE)!
